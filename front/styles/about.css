@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0f3c9;
+  }
+  
+  header {
+    background-color: #8e19db;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #0d045f;
+    text-align: center;
+    font-size: 22px;
+
+  }
+  
+  p {
+    color: #131111;
+    line-height: 1.6;
+  }
+
+  img {
+    display:flex;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }

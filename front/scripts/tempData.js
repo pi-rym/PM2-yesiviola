@@ -29,4 +29,25 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
+  {
+    title: "The Dark Knight",
+    year: 2008,
+    director: "Christopher Nolan",
+    duration: "2h 32min",
+    genre: ["Action", "Crime", "Drama", "Thriller"],
+    rate: 9.0,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+  },
+  {
+    title: "The Godfather",
+    year: 1972,
+    director: "Francis Ford Coppola",
+    duration: "2h 55min",
+    genre: ["Crime", "Drama"],
+    rate: 9.2,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+  },
+
 ];

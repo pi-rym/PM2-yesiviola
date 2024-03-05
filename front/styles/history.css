@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfeef7;
+  }
+  
+  h1 {
+    color: #350cec;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p {
+    color: #0e0d0d;
+    line-height: 1.6;
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  header {
+    background-color: #8e19db;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  nav {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition:  color 0.3s ease;
+  }
+  nav a:hover {
+    color: #31f14a;
+  }

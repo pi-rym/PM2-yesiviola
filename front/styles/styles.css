@@ -1,0 +1,172 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  h1 {
+    text-align: center;
+    margin: 15px;
+  }
+  h1 {
+    display:block;
+    color: #c4f70b;
+    text-shadow: 0px 0px 20px #141401;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 22px;
+    animation: move2 5s forwards ease-in-out;
+    position:relative;
+  }
+  
+  h1::after {
+    content: "";
+    position:absolute;
+    bottom: -10px; 
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #49ee3a;
+    animation: move2 3s infinite ease-in-out;
+  }
+  
+  @keyframes move2 {
+    0% {
+      margin-right: 410px;
+      width: 600px;
+    }
+    50% {
+      margin-left: 0px;
+      width: 0;
+    }
+    100% {
+      margin-left: 410px;
+      width: 600px;
+    }
+  }
+  img[alt="cine"]{
+    width:100px;
+    height: auto;
+    right:20px;
+    border-radius: 15px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #790e79;
+    color: #fff;
+    padding:  10px 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    gap: 120px;
+
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration:dashed;
+    transition: all .3s ease-in-out;
+
+  }
+  
+  #movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card h2 {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height:auto;
+  }
+  
+  .movie-card p {
+    text-align:justify;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+
+  /* Estilos para pantallas con un ancho de 600px o menos */
+@media (max-width: 600px) {
+    h1 {
+      font-size: 18px;
+    }
+  
+    h1::after {
+      width: 30%;
+    }
+  
+    img[alt="cine"] {
+      width: 80px;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #movie-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .movie-card h2 {
+      font-size: 14px;
+    }
+  
+    .movie-card p {
+      font-size: 12px;
+    }
+  }
+  
+
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    h1::after {
+      width: 40%;
+    }
+  
+    img[alt="cine"] {
+      width: 80px;
+    }
+  
+    nav {
+      gap: 30px;
+    }
+  
+    #movie-container {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+  
+    .movie-card h2 {
+      font-size: 15px;
+    }
+  
+    .movie-card p {
+      font-size: 13px;
+    }
+  }
