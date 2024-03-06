@@ -3,8 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-position: center;
+    background-color: #e986e4;
+    background-size:cover;
+    background-position:center;
   }
   h1 {
     text-align: center;
@@ -12,21 +13,21 @@ body {
   }
   h1 {
     display:block;
-    color: #c4f70b;
-    text-shadow: 0px 0px 20px #141401;
-    font-family: sans-serif;
+    color: #faf604;
+    text-shadow: 0px 3px 20px #041d03;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
     animation: move2 5s forwards ease-in-out;
     position:relative;
   }
   
   h1::after {
     content: "";
-    position:absolute;
+    position:fixed;
     bottom: -10px; 
     left: 0;
-    width: 50%;
+    width: 30%;
     height: 2px;
     background-color: #49ee3a;
     animation: move2 3s infinite ease-in-out;
@@ -35,7 +36,7 @@ body {
   @keyframes move2 {
     0% {
       margin-right: 410px;
-      width: 600px;
+      width: 500px;
     }
     50% {
       margin-left: 0px;
@@ -43,7 +44,7 @@ body {
     }
     100% {
       margin-left: 410px;
-      width: 600px;
+      width: 500px;
     }
   }
   img[alt="cine"]{
@@ -79,14 +80,16 @@ body {
   
   #movie-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+    padding: 50px;
   }
   
   .movie-card {
     background-color: #fff;
     border-radius: 10px;
+    margin-top: 50px;
     padding: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -170,3 +173,11 @@ body {
       font-size: 13px;
     }
   }
+
+  footer {
+    background-color: #790e79;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+}

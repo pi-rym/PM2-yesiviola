@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    if (typeof tempData !== 'undefined') {
       const movieContainer = document.getElementById('movie-container');
       const body = document.getElementById('body');
-    
-      tempData.forEach(movie => {
+
+
+     $.get('https://students-api.2.us-1.fl0.io/movies', function(data){
+      data.forEach(movie => {
         const movieCard = document.createElement('div');
         movieCard.classList.add('movie-card');
         movieCard.innerHTML = `
@@ -20,8 +21,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
         movieContainer.appendChild(movieCard);
       });
-    }
+    });
   });
+
 
 
 
