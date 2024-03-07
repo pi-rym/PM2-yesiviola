@@ -4,6 +4,19 @@ body {
     padding: 0;
     background-color: #da87eb;
   }
+
+  @keyframes colorchange {
+    5% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+  }
+  h1 {
+    text-align: center;
+    animation: colorchange 5s infinite;
+  }
   
   header {
     background-color: #8e19db;
@@ -30,18 +43,13 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  h1 {
-    color: #0d045f;
-    text-align: center;
-    font-size: 22px;
-
-  }
   
   p {
-    text-indent: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     color: #131111;
-    line-height: 1.5;
+    line-height: 1.4;
+
   }
 
   img {
@@ -50,9 +58,3 @@ body {
     height: auto;
     margin: 20px auto;
   }
-  article {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}

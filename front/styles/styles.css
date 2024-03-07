@@ -17,22 +17,21 @@ body {
     text-shadow: 0px 3px 20px #041d03;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: 28px;
+    font-size:28px;
     animation: move2 5s forwards ease-in-out;
     position:relative;
   }
-  
   h1::after {
     content: "";
     position:fixed;
-    bottom: -10px; 
+    bottom: -10px;
     left: 0;
     width: 30%;
     height: 2px;
     background-color: #49ee3a;
     animation: move2 3s infinite ease-in-out;
   }
-  
+
   @keyframes move2 {
     0% {
       margin-right: 410px;
@@ -51,9 +50,17 @@ body {
     width:100px;
     height: auto;
     right:20px;
-    border-radius: 15px;
+    border-radius: 50%;
+  }
+  @keyframes spin {
+    25% { transform: rotate(180deg); }
+    50% { transform: rotate(360deg); }
   }
   
+  img[alt="cine"]{
+    animation: spin 5s linear infinite;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -61,7 +68,7 @@ body {
     color: #fff;
     padding:  10px 20px;
   }
-  
+
   nav {
     display: flex;
     justify-content: space-around;
@@ -70,105 +77,102 @@ body {
 
     text-align: center;
   }
-  
+
   nav a {
     color: #fff;
     text-decoration:dashed;
     transition: all .3s ease-in-out;
 
   }
-  
+
   #movie-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
     padding: 50px;
   }
-  
+
   .movie-card {
-    background-color: #fff;
+    background-color: #fff; 
     border-radius: 10px;
     margin-top: 50px;
     padding: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .movie-card h2 {
     margin: 0 0 10px;
     font-size: 16px;
   }
-  
+
   .movie-card img {
     width: 100%;
     height:auto;
   }
-  
+
   .movie-card p {
     text-align:justify;
     margin: 10px 0;
     font-size: 14px;
   }
-
-
-  /* Estilos para pantallas con un ancho de 600px o menos */
 @media (max-width: 600px) {
     h1 {
       font-size: 18px;
     }
-  
+
     h1::after {
       width: 30%;
     }
-  
+
     img[alt="cine"] {
       width: 80px;
     }
-  
+
     nav {
       flex-direction: column;
       gap: 10px;
     }
-  
+
     #movie-container {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-  
+
     .movie-card h2 {
       font-size: 14px;
     }
-  
+
     .movie-card p {
       font-size: 12px;
     }
   }
-  
+
 
   @media (max-width: 900px) {
     h1 {
       font-size: 20px;
     }
-  
+
     h1::after {
       width: 40%;
     }
-  
+
     img[alt="cine"] {
       width: 80px;
     }
-  
+
     nav {
       gap: 30px;
     }
-  
+
     #movie-container {
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
-  
+
     .movie-card h2 {
       font-size: 15px;
     }
-  
+
     .movie-card p {
       font-size: 13px;
     }

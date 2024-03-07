@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', (event) => {
       const movieContainer = document.getElementById('movie-container');
       const body = document.getElementById('body');
-
-
      $.get('https://students-api.2.us-1.fl0.io/movies', function(data){
       data.forEach(movie => {
+  
         const movieCard = document.createElement('div');
         movieCard.classList.add('movie-card');
         movieCard.innerHTML = `
