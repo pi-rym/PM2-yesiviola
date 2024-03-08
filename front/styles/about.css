@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #da87eb;
   }
 
   @keyframes colorchange {
@@ -15,37 +14,25 @@ body {
   }
   h1 {
     text-align: center;
-    animation: colorchange 5s infinite;
+    animation: colorchange 3s infinite;
   }
   
   header {
     background-color: #8e19db;
     color: #fff;
     padding: 30px 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content:space-between;
-    padding: 0 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration:dashed;
-  }
-  
+  }  
   main {
     max-width: 800px;
     margin: 20px auto;
     padding: 30px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
   
   
   p {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 20px;
     color: #131111;
     line-height: 1.4;

@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e986e4;
+    background-color: #0f0c0f;
     background-size:cover;
     background-position:center;
   }
@@ -64,7 +64,7 @@ body {
   header {
     display: flex;
     justify-content: space-between;
-    background-color: #790e79;
+    background: linear-gradient(to right,#790e79, transparent);
     color: #fff;
     padding:  10px 20px;
   }
@@ -179,7 +179,8 @@ body {
   }
 
   footer {
-    background-color: #790e79;
+    background: linear-gradient(to right, #790e79, transparent);
+    color: #fff;
     color: #fff;
     text-align: center;
     font-size: 20px;
