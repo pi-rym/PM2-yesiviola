@@ -1,7 +1,10 @@
+ const axios = require('axios');
  const renderCards = require('./renderCards');
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  $.get('https://students-api.2.us-1.fl0.io/movies', function(data){
-    renderCards(data);
+document.addEventListener('DOMContentLoaded', async (event) => {
+  try {
+ const response = await axios.get("https://students-api.up.railway.app/movies");
+    renderCards(response.data);
+  } catch (error) {
+    console.error(error);
+   }
   });
-});
