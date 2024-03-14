@@ -1,3 +1,11 @@
-exports.getMovies = (req, res) => {
-    res.send('The movies will soon be available here');
-}
+const { getMovies } = require('../services/moviesService');
+
+const moviesController = {
+    getAll: (req, res) => {
+        const movies = getMovies();
+        res.json(movies);
+    
+    },
+};
+
+module.exports = moviesController;
