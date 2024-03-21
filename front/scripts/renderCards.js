@@ -1,8 +1,8 @@
-function renderCards(data) {
+function renderCards(movies) {
     const movieContainer = document.getElementById('movie-container');
     const body = document.getElementById('body');
   
-    data.forEach(movie => {
+    movies.forEach(movie => {
       const movieCard = document.createElement('div');
       movieCard.classList.add('movie-card');
       movieCard.innerHTML = `
@@ -11,10 +11,10 @@ function renderCards(data) {
         <p>${movie.year}</p>
         <p>${movie.director}</p>
         <p>${movie.duration}</p>
-        <p>${movie.genre.join(', ')}</p>
+        <p>${Array.isArray(movie.genre) ? movie.genre.join(',') :  movie.genre}</p>
         <p>⭐⭐⭐⭐⭐ ${movie.rate}</p>
       `;
-      movieCard.addEventListener('mouseover', () => {
+      movieCard?.addEventListener('mouseover', () => {
           body.style.backgroundImage = `url(${movie.poster})`;
       });
       movieContainer.appendChild(movieCard);
@@ -22,5 +22,5 @@ function renderCards(data) {
     console.log("todas las targetas renderizadas correctamente")
   }
 
-    module.exports = renderCards;
+    export default renderCards;
   

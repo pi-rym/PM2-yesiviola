@@ -186,3 +186,21 @@ body {
     font-size: 20px;
     padding: 30px;
 }
+
+
+
+
+
+.form-group label {
+  display:flex;
+  width: 400%;
+  color: white;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: #0f000f;
+  border-color:#e636d7;
+}
